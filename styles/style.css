@@ -6,3 +6,167 @@ Green: #00B172
 White: #FFF
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    color: #1A1A1A;
+    background-color: #FFF;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    position: sticky;
+    top: 0;
+    background-color: #FFF;
+}
+
+header img {
+    height: 40px;
+}
+
+header ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 3.25em;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 600;
+    text-decoration: underline .125em #00B172;
+    text-underline-offset: .5em;
+    line-height: 2em;
+}
+
+p {
+    font-weight: 300;
+}
+
+section {
+    padding: 40px 64px;
+}
+
+/* <section class="hero"> */
+
+.hero {
+    background-image: url("../images/landing.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 200px 160px;
+    color: #FFF;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.25em;
+}
+
+/* <section class="info"> */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.info-item {
+    display: flex;
+    gap: 48px;
+}
+
+.info-item div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    flex: 1;
+}
+
+.info-item img {
+    height: 64px;
+}
+
+.info-item h3 {
+    color: #00B172;
+}
+
+/* <section class="feature"> */
+
+.feature {
+    background-color: #00B172;
+    color: #FFF;
+    margin: 24px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 40px;
+    grid-template-areas:
+        "feature-title spotify-app";
+}
+
+.feature-title {
+    grid-area: feature-title;
+}
+
+.spotify-app {
+    grid-area: spotify-app;
+}
+
+.feature h2 {
+    text-decoration: underline .125em #FFF;
+    margin-bottom: 32px;
+}
+
+.feature h3 {
+    margin-bottom: 16px;
+}
+
+.feature-body {
+    display: flex;
+    gap: 40px;
+}
+
+.feature-items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.spotify-icon,
+.spotify-app {
+    display: flex;
+    margin: auto;
+}
+
+.spotify-icon img {
+    height: 80px;
+}
+
+.spotify-app img {
+    height: 400px;
+}
